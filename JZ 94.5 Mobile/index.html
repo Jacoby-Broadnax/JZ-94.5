@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <link>
+        <link rel="stylesheet" href="main.css">
+        <title>JZ 94.5 | The People's Station</title>
+        <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
+        <meta name="description" content="
+        About
+        The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+    <meta name="keywords"
+        content="Radio, JZ 94.5, The people station, R&B, Hip Hop, Blues, MS Gulf Coast, Mississippi Gulfcoast">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/68a4a98a-89da-41d5-a960-eae38047b504', function (data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+            })
+        })
+    </script>
+
+    <script id="item-template" type="text/x-handlebars-template">
+     
+        {{#each this}}
+        <div class="card black">
+            <style>
+                a {color:black;}
+                </style>
+            <div class="card-image">
+              {{{image}}}
+          
+            </div>
+            <div class="card-content">
+                    <span class="card-title">{{title}}</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action ">
+              <a href="#" class="white-text">Learn More</a>
+            </div>
+          </div>
+    {{/each}}
+   
+</div>
+
+</script>
+</head>
+    <body>
+<nav>
+    <div class="logo-container">
+        <img src="branding/Jz large white logo.png">
+    </div>
+</nav>
+<section id="home">
+        <div class="navigation-container">
+                <div id="items">  <div class="progress white blue-text">
+                    <div class="indeterminate grey darken-4"></div>
+                </div></div>
+            </div>
+</section>
+
+<section id="live">
+
+</section>
+
+<section id="Contact">
+
+    </section>
+
+    <section id="About Us">
+
+        </section>
+
+    </body>
+</html>

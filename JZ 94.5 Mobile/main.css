@@ -1,0 +1,16 @@
+body {background-color: black; margin: 0px; padding: 0px;;;;}
+
+h3,p,h2,h4 {color: white;;}
+/*---------------------------Navigation-----------------------------------*/
+
+nav {background-color: black !important;;position: fixed; left: 0px; top: 0px; width: 100%; height: 80px !important;z-index: 150;;}
+
+.logo-container > img {width:120px;}
+
+.logo-container {margin: auto; width: 120px;margin-top: 20px;}
+
+.card-image > a > img {filter: brightness(0.7);;}
+
+.navigation-container {margin-top: 80px;}
+
+.card-title {color: white;;}

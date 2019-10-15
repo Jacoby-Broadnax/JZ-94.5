@@ -343,7 +343,7 @@ nav>ul>li>a {
 .slide-button-container>a {
   color: white;
   font-size: 15px;
-  ;
+  font-weight: bold;
 }
 
 .slide-text-container>h5 {

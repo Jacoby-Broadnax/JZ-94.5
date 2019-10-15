@@ -1,0 +1,355 @@
+<html>
+
+<head>
+    <title>JZ 94.5 | The People's Station</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="
+        About
+        The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+    <meta name="keywords"
+        content="Radio, JZ 94.5, The people station, R&B, Hip Hop, Blues, MS Gulf Coast, Mississippi Gulfcoast">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="vivify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/68a4a98a-89da-41d5-a960-eae38047b504', function (data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+            })
+        })
+    </script>
+
+    <script id="item-template" type="text/x-handlebars-template">
+        <div class="slideshow-container" id="img-base">
+            <div class="loading-indicator vivify fadeOut delay-3250">
+                <div><img src="https://i.pinimg.com/originals/ab/45/bb/ab45bb4451536652faca51ae4f42d5dd.gif"></div>
+            </div>
+        <style>
+        
+        </style>
+        {{#each this}}
+        <div class="mySlides1 {{postValue}}">
+                <div class="vivify fadeIn duration-400"><div  class="vivify fadeOut delay-4250 duration-300">{{{image}}}</div></div>
+              
+                <div class="slide-info-container animated animatedFadeInUp fadeInUpPlus" >
+                    <div class="slide-card vivify fadeOut delay-3750">
+                    <div class="slide-text-container">
+                        <h3>{{title}}</h3>
+                        <h5>{{subTitle}}</h5>
+                        <p>{{description}}</p>
+                        
+                        <div class="slide-button-container">
+                            <a href="{{buttonLink}}" target="_blank">Learn More</a>
+                        </div>
+                        <span>Posted On {{timestamp}}</span>
+                       
+                    </div>
+                    <div class="sponsor-tag {{sponsored}}">
+                        <h3>Sponsored By</h3>
+                        <p>{{sponsorName}}</p>
+                   
+                    </div>
+                </div>
+                </div>
+            </div>
+    {{/each}}
+    <a class="prev vivify fadeIn delay-4000" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next vivify fadeIn delay-4000" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/68a4a98a-89da-41d5-a960-eae38047b504', function (data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#items2').html(template(data))
+            })
+        })
+    </script>
+
+    <script id="item-template2" type="text/x-handlebars-template">
+
+        <div class="contest vivify fadeIn delay-4000">
+<span>Contests:</span>
+<marquee>
+     
+    {{#each this}}
+   
+   <a href="#ID" class="contest-link {{postValue}}">
+        &emsp;<p>{{title}}</p>
+   </a>
+{{/each}}
+</marquee>
+<a class="contest-view-button" href="#contest">View All</a>
+</div>  
+</script>
+
+</head>
+
+<body>
+    <nav id="header">
+        <div class="left-group"></div>
+
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/JZ94.5FM" target="_blank"><img src="Assets/facebook logo.svg"
+                    alt="facebook" name="facebook"></a>
+            <a style="margin-top: -50px;" href="http://instagram.com/jz945" target="_blank"><img
+                    src="Assets/Instagram Logo.svg" alt="instagram"></a>
+            <a style="margin-top: -50px;" href="http://instagram.com/jz945" target="_blank"><img
+                    src="Assets/Twitter_Logo_WhiteOnImage.svg" alt="instagram"></a>
+        </div>
+
+        </div>
+        <div class="fixed-logo-container">
+            <div class="logo-container"><a href="#"><img src="branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#" style="margin-right: 10px;">Home</a></li>
+            <li>
+                <a href="#dj">Meet The DJ'Z</a>
+            </li>
+            <li>
+                <a style="color: white;" href="#contact">Contact</a>
+
+
+            </li>
+
+            <li>
+                <div class="live-dot vivify fadeIn infinite delay-1000"></div> <a
+                    style="color: white;;margin-left: -6px;;;" href="#audio">Listen <strong>Live</strong></a>
+
+
+            </li>
+
+        </ul>
+    </nav>
+
+    <section class="hero-container">
+        <div id="items2"></div>
+        <div id="items"></div>
+
+        <div class="audio-sub vivify pullRight" id="audio">
+            <div class="audio-container vivify">
+                <iframe src="https://tunein.com/embed/player/s30052/" style="width:450px; height:100px;" scrolling="no"
+                    frameborder="no"></iframe>
+            </div>
+        </div>
+        <div class="slide-container" style="display:block;">
+
+
+
+            <script>
+                window.setInterval(function () {
+                    plusSlides(1, 0)
+                }, 5000);
+            </script>
+
+            <script>
+                var slideIndex = [1, 1];
+                var slideId = ["mySlides1", "mySlides2"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+
+                function plusSlides(n, no) {
+                    showSlides(slideIndex[no] += n, no);
+                }
+
+                function showSlides(n, no) {
+                    var i;
+                    var x = document.getElementsByClassName(slideId[no]);
+                    if (n > x.length) {
+                        slideIndex[no] = 1
+                    }
+                    if (n < 1) {
+                        slideIndex[no] = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex[no] - 1].style.display = "block";
+                }
+            </script>
+
+
+
+        </div>
+
+
+    </section>
+
+    <section class="dj-sect" id="dj">
+        <img data-aos="fade-up" data-aos-duration="500" class="dj-hero" src="images/Meet The DJ'Z.png">
+        <h1 data-aos="fade-up">Meet The DJ'Z</h1>
+        <div class="carousel dj-carousel"
+            data-flickity='{"pauseAutoPlayOnHover": false,"fullscreen": true,"initialIndex": 2,"pageDots": false }'>
+
+            <div style="margin-left: 50px;" class="carousel-cell dj-cell" data-aos="fade-up" data-aos-delay="400">
+                <img src="Assets/GrayPlaceholder.png">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere aliquet odio eget viverra.
+                    Integer vel magna id mi </p>
+            </div>
+            <div class="carousel-cell dj-cell" data-aos="fade-up" data-aos-delay="450">
+                <img src="Assets/GrayPlaceholder.png">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere aliquet odio eget viverra.
+                    Integer vel magna id mi </p>
+            </div>
+            <div class="carousel-cell dj-cell" data-aos="fade-up" data-aos-delay="500">
+                <img src="Assets/GrayPlaceholder.png">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere aliquet odio eget viverra.
+                    Integer vel magna id mi </p>
+            </div>
+            <div class="carousel-cell dj-cell" data-aos="fade-up" data-aos-delay="550">
+                <img src="Assets/GrayPlaceholder.png">
+                <h3>Name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere aliquet odio eget viverra.
+                    Integer vel magna id mi </p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="contact-sect" id="contact">
+        <img class="contact-img" data-aos-duration="700" data-aos="fade-up" data-aos-delay="500" class="contact-hero"
+            src="images/Contact.png">
+        <div class="sub-contact-container">
+
+            <h1 data-aos="fade-up" data-aos-duration="700">
+                Contact
+            </h1>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="info-container">
+                <div class="element">
+                    <h5>Office Number</h5>
+                    <p>(228) 896-9455</p>
+                </div>
+                <div class="element">
+                    <h5>Fax</h5>
+                    <p>(228) 896-5307</p>
+                </div>
+                <div class="element">
+                    <h5>Request Line/Office Line</h5>
+                    <p>(228) 896-9455</p>
+                </div>
+                <div class="element">
+                    <h5>Business Hours</h5>
+                    <p>Monday - Friday
+                        9:00am to 5:00pm
+                        closed on holidays</p>
+                </div>
+                <div class="element">
+                    <h5>Address</h5>
+                    <p>10211 Southpark Dr.
+                        Gulfport, MS 39503</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="right-container">
+                <div class="form-container">
+                    <form data-netlify="true" name="JZ 94.5 Contact Form">
+                        <label>Message Us</label>
+                        <br>
+                        <input name="First And Last Name
+                        " type="text" placeholder="First & Lastname" required>
+                        <input name="Email Address" type="email" placeholder="Email Address" required>
+
+                        <textarea name="Message" placeholder="Message" required></textarea>
+
+                        <br>
+                        <select name="Subject" id="myList" required>
+                            <option value="">Subject</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Advertising">Advertising</option>
+                            <option value="Events">Events</option>
+                            <option value="PSA">PSA</option>
+                        </select>
+                        <br>
+                        <div class="form-button-container">
+                            <button type="submit">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-text-container">
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="admin.html" target="_blank">Admin</a><span> ©2019
+                    WJZD</span></p>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 7000);
+        }
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $("#header").addClass("scrolled");
+            } else {
+                $("#header").removeClass("scrolled");
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 150) {
+                $("#img-base").addClass("active");
+            } else {
+                $("#img-base").removeClass("active");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

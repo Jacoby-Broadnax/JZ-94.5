@@ -1,0 +1,137 @@
+<html>
+
+<head>
+    <title>JZ 94.5 | Admin Post</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="
+        About
+        The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+    <meta name="keywords"
+        content="Radio, JZ 94.5, The people station, R&B, Hip Hop, Blues, MS Gulf Coast, Mississippi Gulfcoast">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+
+</head>
+
+<body>
+    <div class="post-form-container">
+        <div class="form-container">
+            <style>
+                input {
+                    margin-bottom: 10px;
+                }
+
+                .imgbb-button {
+                    background-color: black !important;
+                    color: white !important;
+                    border: solid !important;
+                    border-width: 2px !important;
+                    border-color: white !important;
+                    ;
+                    ;
+                }
+
+                textarea {
+                    height: 50px;
+                    ;
+                }
+
+                .image-input:valid {
+                    background-color: green;
+                }
+
+                .post-form-container {
+                    margin: auto;
+                    width: 400px;
+                    ;
+                    ;
+                }
+            </style>
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfBn1YeWIS94Gphoccv2b3OmtUikd85MpeTQVPOK_wXcqLsNw/formResponse"
+                method="POST" target="_self">
+
+                <label>Post Title</label>
+                <input name="entry.866286613" placeholder="Post Title" required>
+                <label>Event / Contest Date</label>
+                <input name="entry.2121826750" placeholder="Event / Contest Date" required>
+                <label>Post Description</label>
+                <input name="entry.824674188" placeholder="Post Description" required>
+                <label>Button Link</label>            
+                <input name="entry.1631859776" placeholder="Button Link" required>
+                <label>Is This Post Sponsored</label>
+                <br>
+                <input class="sponser-input-checkbox" style="width: 20px;border-radius: 0px;float: left;" type="checkbox" value="sponsored" name="entry.877377190"> <span style="color: rgb(63, 63, 63);margin-top:29px;float: left;font-size: 14px;font-weight: normal;margin-left: 5px;;;">Yes, This Post Is Sponsored</span>
+                <input class="sponser-input-text" name="entry.1023405823" style="margin-top: -5px;;" placeholder="This Post Is Sponsored By:">
+
+                <br>
+                <label>Image Upload</label>
+                <textarea name="entry.1543857658" style="height: 50px;border:none;;" class="image-input"
+                    placeholder="Image Code" required></textarea>
+                <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium"></script>
+                <input name="entry.1345396283" style="display: none;" id="foo">
+                <input name="entry.863498841" style="display: none;" id="foo2">
+                <br>
+                <label>Content Type</label>
+                <br>
+                <select name="entry.1638203363" id="myList" required>
+                    <option value="eventpost">Event</option>
+                    <option value="contestpost">Contest</option>
+                </select>
+                <br>
+                <div class="form-button-container">
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function randNumber(len, an) {
+            an = an && an.toLowerCase();
+            var str = "",
+                i = 0,
+                min = an == "a" ? 10 : 0,
+                max = an == "n" ? 10 : 62;
+            for (; i++ < len;) {
+                var r = Math.random() * (max - min) + min << 0;
+                str += String.fromCharCode(r += r > 9 ? r < 36 ? 55 : 61 : 48);
+            }
+            return str;
+        }
+        document.getElementById("foo").value = randNumber(10, 'A');
+    </script>
+    <script>
+        function randNumber(len, an) {
+            an = an && an.toLowerCase();
+            var str = "",
+                i = 0,
+                min = an == "a" ? 10 : 0,
+                max = an == "n" ? 10 : 62;
+            for (; i++ < len;) {
+                var r = Math.random() * (max - min) + min << 0;
+                str += String.fromCharCode(r += r > 9 ? r < 36 ? 55 : 61 : 48);
+            }
+            return str;
+        }
+        document.getElementById("foo2").value = randNumber(10, 'A');
+    </script>
+    <script>
+        function randNumber(len, an) {
+            an = an && an.toLowerCase();
+            var str = "",
+                i = 0,
+                min = an == "a" ? 10 : 0,
+                max = an == "n" ? 10 : 62;
+            for (; i++ < len;) {
+                var r = Math.random() * (max - min) + min << 0;
+                str += String.fromCharCode(r += r > 9 ? r < 36 ? 55 : 61 : 48);
+            }
+            return str;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -90,16 +90,17 @@
     <script id="item-template2" type="text/x-handlebars-template">
 
         <div class="contest vivify fadeIn delay-4000">
-<span>Contests:</span>
-<marquee>
+<h3>Contests:</h3>
+
      
     {{#each this}}
-   
-   <a href="#ID" class="contest-link {{postValue}}">
-        &emsp;<p>{{title}}</p>
-   </a>
+<div class="contest-item">
+    <h3>{{title}}</h3>
+    <span>{{subTitle}}</span>
+    <p>{{description}}</p>
+</div>
 {{/each}}
-</marquee>
+
 <a class="contest-view-button" href="#contest">View All</a>
 </div>  
 </script>
@@ -149,9 +150,9 @@
     </nav>
 
     <section class="hero-container">
-        <div id="items2"></div>
+       
         <div id="items"></div>
-
+        <div id="items2"></div>
         <div class="audio-sub vivify pullRight" id="audio">
             <div class="audio-container vivify">
                 <iframe src="https://tunein.com/embed/player/s30052/" style="width:450px; height:100px;" scrolling="no"

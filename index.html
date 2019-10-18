@@ -29,6 +29,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
     </script>
+    <script type="text/javascript" src="redirection-mobile.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        SA.redirection_mobile({
+            mobile_url: "m.mscoastaljobs.com",
+        });
+
+        // ]]>
+    </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -89,7 +98,7 @@
 
     <script id="item-template2" type="text/x-handlebars-template">
 
-        <div class="contest vivify fadeIn delay-4000">
+        <div style="display: none;" class="contest vivify fadeIn delay-4000">
 <h3>Contests:</h3>
 
      
@@ -150,7 +159,7 @@
     </nav>
 
     <section class="hero-container">
-       
+
         <div id="items"></div>
         <div id="items2"></div>
         <div class="audio-sub vivify pullRight" id="audio">
@@ -303,7 +312,8 @@
 
     <footer>
         <div class="footer-text-container">
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="admin.html" target="_blank">Admin</a><span> ©2019
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="admin.html"
+                    target="_blank">Admin</a><span> ©2019
                     WJZD</span></p>
         </div>
     </footer>

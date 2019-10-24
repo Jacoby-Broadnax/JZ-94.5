@@ -25,7 +25,7 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #EEEEEE;
+            background-color: black;
         }
         
         #dialogWrapCell {
@@ -39,7 +39,7 @@
             margin: 5px;
             border: solid #AAAAAA 1px;
             border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
+          
             margin-left: auto;
             margin-right: auto;
             background-color: #FFFFFF;
@@ -48,7 +48,7 @@
         }
         #passArea {
             padding: 20px 30px;
-            background-color: white;
+            background-color: black;
         }
         #passArea > * {
             margin: 5px auto;
@@ -98,17 +98,17 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
+                <div id="dialogText" style="color: white;">Enter Your Password Below</div>
                 <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass">
+                    <p id="passwordPrompt" style="color: white;">Password</p>
+                    <input style="border-radius: 5px; border:none;padding-left: 5px;" id="pass" type="password" name="pass">
                     <div>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
                             <span id="success" class="notifyText">Success!</span>
                             &nbsp;
                         </span>
-                        <button id="submitPass" type="button">Submit</button>
+                        <button id="submitPass" style="font-size: 14px;background-color: white;border: none;;" type="button">Confirm</button>
                         <div style="clear: both;"></div>
                     </div>
                 </div>

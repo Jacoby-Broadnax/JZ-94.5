@@ -1,9 +1,10 @@
 body {
   margin: 0px;
   padding: 0px;
-  background-color: black;
+background-color: black;
   font-family: sans-serif, roboto;
   scroll-behavior: smooth;
+
 }
 
 html {
@@ -439,6 +440,7 @@ right: 25px;
   left: 500px;
 
 }
+
 
 
 .prev-step:hover,

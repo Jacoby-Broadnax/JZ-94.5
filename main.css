@@ -412,8 +412,8 @@ right: 25px;
 
 .slideshow-container {}
 
-.prev,
-.next {
+.prev-step,
+.next-step {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -430,19 +430,19 @@ right: 25px;
   ;
 }
 
-.prev {
+.prev-step {
   left: 40px;
   ;
 }
 
-.next {
+.next-step {
   left: 500px;
 
 }
 
 
-.prev:hover,
-.next:hover {
+.prev-step:hover,
+.next-step:hover {
   background-color: #f1f1f1;
   color: black;
 

@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-background-color: black;
+  background-color: black;
   font-family: sans-serif, roboto;
   scroll-behavior: smooth;
 
@@ -13,6 +13,24 @@ html {
 
 a {
   text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(31, 31, 31);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(31, 31, 31);
 }
 
 .dropbtn {
@@ -200,13 +218,42 @@ nav>ul>li>a {
 
 /*----------------------------------------------------------------Slide Show CSS-----------------------------------------------------*/
 
-.sponsor-tag{margin-left: 125px;margin-top: 10px;;display: none;;}
+.sponsor-tag {
+  margin-left: 125px;
+  margin-top: 10px;
+  ;
+  display: none;
+  ;
+}
 
-.sponsored {display: block;}
+.sponsored {
+  display: block;
+}
 
-.sponsor-tag > h3 {background-color:transparent; color:white;font-size: 10px;padding: 5px;float: left;border: solid;border-width: 1.5px; border-color: white;;;;;;}
+.sponsor-tag>h3 {
+  background-color: transparent;
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  float: left;
+  border: solid;
+  border-width: 1.5px;
+  border-color: white;
+  ;
+  ;
+  ;
+  ;
+  ;
+}
 
-.sponsor-tag > p {float: left; margin: 15px;margin-top: 13px;font-size: 13px;;;}
+.sponsor-tag>p {
+  float: left;
+  margin: 15px;
+  margin-top: 13px;
+  font-size: 13px;
+  ;
+  ;
+}
 
 * {
   box-sizing: border-box
@@ -292,7 +339,10 @@ nav>ul>li>a {
 
 .items2 {
   position: absolute;
- right: 20px; top: 80px;;;
+  right: 20px;
+  top: 80px;
+  ;
+  ;
   ;
   ;
   ;
@@ -307,12 +357,13 @@ nav>ul>li>a {
 
 .contest {
   position: absolute;
-right: 25px;
+  right: 25px;
   top: 80px;
   z-index: 50;
   width: 300px;
   overflow-y: scroll;
-  height: 85vh;;
+  height: 85vh;
+  ;
 }
 
 .contest-link {
@@ -743,16 +794,25 @@ section>h3 {
   font-weight: normal;
 }
 
+
+
 .element>p {
   color: #A6A19F;
   font-size: 14px;
   margin-top: -25px;
   width: 145px;
+  transition: 0.2s ease; ;
 }
+
+.element>p:hover {color: white;
+font-size: 15px;;;}
+
+.element:hover {color: white; cursor: pointer;;}
 
 .element {
   padding-top: 1px;
   margin-top: -4px;
+  transition: 0.2s ease;;
 }
 
 .info-container {
@@ -912,4 +972,3 @@ footer {
 }
 
 /*----------------------------Data Set----------------------*/
-

@@ -447,8 +447,8 @@ nav>ul>li>a {
 
 .slideshow-container {}
 
-.prev,
-.next-slide {
+.prev-step,
+.next-step {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -465,7 +465,7 @@ nav>ul>li>a {
   ;
 }
 
-.prev {
+.prev-step {
   left: 40px;
   ;
 }
@@ -476,7 +476,7 @@ nav>ul>li>a {
 }
 
 
-.prev:hover,
+.prev-step:hover,
 .next-slide:hover {
   background-color: #f1f1f1;
   color: black;
@@ -549,14 +549,14 @@ nav>ul>li>a {
 .person {
   display: inline-block;
   margin-left: 20px;
-  width:30vh;
+  width:200px;
   height: 20vh;
   margin-top: 50px;;
 }
 
 .person>img {
   width: 100%;
-  height: 350px;
+  height: 40vh;
   ;
   ;
 }

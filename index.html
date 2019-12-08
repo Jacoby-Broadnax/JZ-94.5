@@ -90,30 +90,35 @@
 </script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $.getJSON('https://api.sheety.co/68a4a98a-89da-41d5-a960-eae38047b504', function (data) {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2', function (data) {
                 var template = Handlebars.compile($('#item-template2').html())
-                $('#items2').html(template(data))
+                $('#items2').html(template(data.data2))
             })
         })
     </script>
 
     <script id="item-template2" type="text/x-handlebars-template">
 
-        <div style="display: none;" class="contest vivify fadeIn delay-4000">
-<h3>Contests:</h3>
 
+        <div class="people-container" data-aos="fade-up" data-aos-delay="200">
      
     {{#each this}}
-<div class="contest-item">
-    <h3>{{title}}</h3>
-    <span>{{subTitle}}</span>
-    <p>{{description}}</p>
-</div>
+   
+        <div class="person">
+            {{{imageUrl}}}
+            <h3>{{title}}</h3>
+            <h4>{{description}}</h4>
+            <div><a href="{{link}}" target="_blank">CONTACT</a></div>
+            
+        </div>
+  
+    
 {{/each}}
 
-<a class="contest-view-button" href="#contest">View All</a>
-</div>  
+</div>
+
 </script>
+
 
 </head>
 
@@ -168,7 +173,7 @@
     <section class="hero-container">
 
         <div id="items"></div>
-        <div id="items2"></div>
+
         <div class="audio-sub vivify pullRight" id="audio">
             <div class="audio-container vivify">
                 <iframe src="https://tunein.com/embed/player/s30052/" style="width:450px; height:100px;" scrolling="no"
@@ -221,18 +226,14 @@
     <section class="dj-sect" id="dj">
         <img data-aos="fade-up" data-aos-duration="500" class="dj-hero" src="images/Meet The DJ'Z.png">
         <h1 data-aos="fade-up">Meet The DJ'Z</h1>
+        <div id="items2"></div>
         <div class="people-container" data-aos="fade-up" data-aos-delay="200">
             <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-            <div class="person"> 
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person" >
+            <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
@@ -242,8 +243,13 @@
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-        
-     </div>
+            <div class="person">
+                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
+                <h3>Name</h3>
+                <h4>Sound Technician</h4>
+            </div>
+
+        </div>
 
     </section>
 
@@ -256,12 +262,12 @@
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-            <div class="person"> 
+            <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-            <div class="person" >
+            <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
@@ -276,12 +282,12 @@
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-            <div class="person"> 
+            <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-            <div class="person" >
+            <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
@@ -296,20 +302,20 @@
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-            <div class="person"> 
+            <div class="person">
                 <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
                 <h3>Name</h3>
                 <h4>Sound Technician</h4>
             </div>
-       
+
         </div>
-     
+
 
     </section>
 
     <div class="contact-sect" id="contact">
-        <img class="contact-img" data-aos-duration="700" data-aos="fade-up" data-aos-delay="500" alt="Contact Hero Image" class="contact-hero"
-            src="images/Contact.webp">
+        <img class="contact-img" data-aos-duration="700" data-aos="fade-up" data-aos-delay="500"
+            alt="Contact Hero Image" class="contact-hero" src="images/Contact.webp">
         <div class="sub-contact-container">
 
             <h1 data-aos="fade-up" data-aos-duration="700">

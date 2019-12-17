@@ -71,7 +71,7 @@
                         <div class="slide-button-container">
                             <a href="{{buttonLink}}" target="_blank">Learn More</a>
                         </div>
-                        <span>Posted On {{timestamp}}</span>
+               
                        
                     </div>
                     <div class="sponsor-tag {{sponsored}}">
@@ -113,6 +113,38 @@
         </div>
   
     
+{{/each}}
+
+</div>
+
+</script>
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3', function (data) {
+            var template = Handlebars.compile($('#item-template3').html())
+            $('#items3').html(template(data.data3))
+        })
+    })
+</script>
+
+<script id="item-template3" type="text/x-handlebars-template">
+
+
+    <div class="people-container" data-aos="fade-up" data-aos-delay="200">
+ 
+{{#each this}}
+
+    <div class="person">
+        {{{imageUrl}}}
+        <h3>{{title}}</h3>
+        <h4>{{description}}</h4>
+        <div><a href="{{link}}" target="_blank">CONTACT</a></div>
+        
+    </div>
+
+
 {{/each}}
 
 </div>
@@ -227,89 +259,14 @@
         <img data-aos="fade-up" data-aos-duration="500" class="dj-hero" src="images/Meet The DJ'Z.png">
         <h1 data-aos="fade-up">Meet The DJ'Z</h1>
         <div id="items2"></div>
-        <div class="people-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
 
-        </div>
 
     </section>
 
     <section class="work-sect" id="sales">
         <img data-aos="fade-up" data-aos-duration="500" class="dj-hero" src="images/Meet The DJ'Z.png">
         <h1 data-aos="fade-up">Meet The Sales Team</h1>
-        <div class="people-container" data-aos="fade-up">
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-            <div class="person">
-                <img loading="lazy" src="assets/GrayPlaceholder.png" alt="">
-                <h3>Name</h3>
-                <h4>Sound Technician</h4>
-            </div>
-
-        </div>
-
+        <div id="items3"></div>
 
     </section>
 

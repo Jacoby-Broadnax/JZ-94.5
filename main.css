@@ -171,7 +171,10 @@ nav>ul>li>a {
 right: 130px;;
   margin-top: 30px;
   margin-left: 90px;
+  transition: 0.1s ease;
 }
+
+
 
 
 .social-icons>a>img {
@@ -182,9 +185,17 @@ right: 130px;;
 
 .social-icons>a>img:hover {
   width: 27px;;
-  background-color: black;
+
   border-radius: 5px;;
 }
+
+@media only screen and (max-width: 1166px) {
+  .social-icons{width: 25px;margin-top: 40vh;right: 10px;;}
+  .social-icons > a > img {margin-top: 10px;;}
+  #social{transition: 0.5s ease;;}
+  #social.v {filter: brightness(0.2);}
+  #social:hover {filter: brightness(1);}
+  }
 
 #header {
   background-color: transparent;

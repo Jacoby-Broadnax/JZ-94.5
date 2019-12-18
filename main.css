@@ -476,7 +476,7 @@ right: 130px;;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 3px;
+
   user-select: none;
   margin-top: 10px;
   ;
@@ -492,9 +492,11 @@ right: 130px;;
 
 }
 
+.next-step {left: 500px;}
+
 
 .prev-step:hover,
-.next-slide:hover {
+.next-step:hover {
   background-color: #f1f1f1;
   color: black;
 
@@ -558,8 +560,7 @@ right: 130px;;
 
 /*-------------------------------DJ Sect--------------------------*/
 .people-container {
-  position: relative;
-  z-index: 30;
+  
   margin-top: 150px;
 }
 
@@ -567,7 +568,7 @@ right: 130px;;
   display: inline-block;
   margin-left: 20px;
   width:200px;
-  height: 20vh;
+
   margin-top: 50px;;
   
 }
@@ -605,7 +606,7 @@ right: 130px;;
 }
 
 .dj-sect {
-  height: 100vh;
+
   padding-top: 5vh;
 }
 
@@ -660,6 +661,7 @@ p {
 .contact-hero {
   width: 100%;
   height: 100vh;
+  margin-top: -100px;
 }
 
 /*----------------------------------Carousel---------------------*/
@@ -814,17 +816,16 @@ section>h3 {
 /*-----------------------------Contact--------------------------*/
 
 .contact-sect {
-  margin-top: 10vh;
-  padding-top: 15vh;
+
+ padding-top: 70px;
 }
 
 .sub-contact-container {
   margin: auto;
   width: 760px;
   background-color: transparent;
-  ;
-  position: relative;
-  z-index: 5;
+  margin-top: 100px;
+ 
 }
 
 .sub-contact-container>h1 {
@@ -837,7 +838,9 @@ section>h3 {
   object-fit: cover;
   position: absolute;
   left: 0px;
-  margin-top: -200px;
+  margin-top: -120px;
+  z-index: -5;
+
 }
 
 .element>h5 {

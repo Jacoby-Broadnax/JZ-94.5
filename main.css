@@ -67,11 +67,11 @@ a {
 .dropdown:hover .dropbtn {}
 
 .logo-container {
-  margin: auto;
-  width: 170px;
+
   margin-top: 15px;
   padding-right: 50px;
-
+float: left;
+margin-left: 110px;
 }
 
 .fixed-logo-container {
@@ -133,7 +133,7 @@ nav {
 
 nav>ul {
   position: fixed;
-  right: 50px;
+  left:250px;
   top: 6px;
   color: white;
   z-index: 650;
@@ -165,10 +165,10 @@ nav>ul>li>a {
 }
 
 .social-icons {
-  float: left;
+  float: right;
   position: absolute;
   z-index: 501;
-  ;
+right: 130px;;
   margin-top: 30px;
   margin-left: 90px;
 }

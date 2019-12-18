@@ -1,0 +1,267 @@
+<html>
+
+<head>
+    <title>JZ 94.5 | The People's Station</title>
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="description" content="
+        About
+        The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+    <meta name="keywords"
+        content="Radio, JZ 94.5, The people station, R&B, Hip Hop, Blues, MS Gulf Coast, Mississippi Gulfcoast">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="vivify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+    </script>
+    <script type="text/javascript" src="redirection-mobile.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        SA.redirection_mobile({
+            mobile_url: "jz945testmobile.netlify.com/",
+        });
+
+        // ]]>
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2', function (data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#items2').html(template(data.data2))
+            })
+        })
+    </script>
+
+    <script id="item-template2" type="text/x-handlebars-template">
+
+
+        <div class="people-container" data-aos="fade-up" data-aos-delay="200">
+     
+    {{#each this}}
+   
+        <div class="person">
+            {{{imageUrl}}}
+            <h3>{{title}}</h3>
+            <h4>{{description}}</h4>
+            <div><a href="{{link}}" target="_blank">CONTACT</a></div>
+            
+        </div>
+  
+    
+{{/each}}
+
+</div>
+
+</script>
+
+
+
+</head>
+
+<body>
+    <nav id="header">
+        <div class="left-group"></div>
+
+        </div>
+
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/JZ94.5FM" target="_blank"><img src="Assets/facebook logo.svg"
+                    alt="facebook" name="facebook"></a>
+            <a style="margin-top: -50px;" href="http://instagram.com/jz945" target="_blank"><img
+                    src="Assets/Instagram Logo.svg" alt="instagram" name="instagram"></a>
+            <a style="margin-top: -50px;" href="https://twitter.com/jz945?lang=en" target="_blank"><img
+                    src="Assets/Twitter_Logo_WhiteOnImage.svg" alt="twitter" name="twitter"></a>
+        </div>
+
+        </div>
+        <div class="fixed-logo-container">
+            <div class="logo-container"><a href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="index.html" style="margin-right: 10px;">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn active-btn"><a style="color: white;" href="dj.html">Meet The Team</a></button>
+                    <div class="dropdown-content vivify popIn">
+                        <a href="dj.html">DJ'Z</a>
+                        <a href="salesteam.html">Sales Team</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a style="color: white;" href="#contact">Contact</a>
+
+
+            </li>
+
+            <li>
+                <div class="live-dot vivify fadeIn infinite delay-1000"></div> <a
+                    style="color: white;;margin-left: -6px;;;" href="#audio">Listen <strong>Live</strong></a>
+
+
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+
+    </section>
+
+    <section class="dj-sect" id="dj">
+        <img data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" class="dj-hero" src="images/Meet The DJ'Z.png">
+        <h1 data-aos="fade-up" data-aos-delay="700">Meet The DJ'Z</h1>
+        <div id="items2"></div>
+
+
+    </section>
+
+
+
+    <div class="contact-sect" id="contact">
+        <img class="contact-img" data-aos-duration="700" data-aos="fade-up" data-aos-delay="500"
+            alt="Contact Hero Image" class="contact-hero" src="images/Contact.webp">
+        <div class="sub-contact-container">
+
+            <h1 data-aos="fade-up" data-aos-duration="700">
+                Contact
+            </h1>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="info-container">
+                <a href="tel:2288969455">
+                    <div class="element">
+                        <h5>Office Number</h5>
+                        <p>(228) 896-9455</p>
+                    </div>
+                </a>
+                <div class="element">
+                    <h5>Fax</h5>
+                    <p>(228) 896-5307</p>
+                </div>
+                <a href="tel:2288969455">
+                    <div class="element">
+                        <h5>Request Line/Office Line</h5>
+                        <p>(228) 896-9455</p>
+                    </div>
+                </a>
+                <div class="element">
+                    <h5>Business Hours</h5>
+                    <p>Monday - Friday
+                        9:00am to 5:00pm
+                        closed on holidays</p>
+                </div>
+                <a href="https://goo.gl/maps/azfm6PMyfELqERn97" target="_blank">
+                    <div class="element">
+                        <h5>Address</h5>
+                        <p>10211 Southpark Dr.
+                            Gulfport, MS 39503</p>
+                    </div>
+                </a>
+
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="right-container">
+                <div class="form-container">
+                    <form data-netlify="true" name="JZ 94.5 Contact Form">
+                        <label>Message Us</label>
+                        <br>
+                        <input name="First And Last Name
+                        " type="text" placeholder="First & Lastname" required>
+                        <input name="Email Address" type="email" placeholder="Email Address" required>
+
+                        <textarea name="Message" placeholder="Message" required></textarea>
+
+                        <br>
+                        <select name="Subject" id="myList" required>
+                            <option value="">Subject</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Advertising">Advertising</option>
+                            <option value="Events">Events</option>
+                            <option value="PSA">PSA</option>
+                        </select>
+                        <br>
+                        <div class="form-button-container">
+                            <button type="submit">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-text-container">
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="admin.html"
+                    target="_blank">Admin</a><span> ©2019
+                    WJZD</span></p>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 7000);
+        }
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $("#header").addClass("scrolled");
+            } else {
+                $("#header").removeClass("scrolled");
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 150) {
+                $("#img-base").addClass("active");
+            } else {
+                $("#img-base").removeClass("active");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

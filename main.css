@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.long-text {margin: auto;width: 700px;margin-top:100px;}
+
+.long-text > h4 {font-size: 20px;}
+
 .dropbtn {
   background-color: transparent;
   color: white;
@@ -97,6 +101,8 @@ a {
   display: none;
   ;
 }
+
+.active-btn {font-weight: bold;;}
 
 #audio:target {
   display: block;
@@ -797,7 +803,7 @@ section>h3 {
 /*-----------------------------Contact--------------------------*/
 
 .contact-sect {
-  margin-top: 40vh;
+  margin-top: 10vh;
   padding-top: 15vh;
 }
 

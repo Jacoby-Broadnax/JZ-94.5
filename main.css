@@ -1032,4 +1032,21 @@ margin-top: 5vh;
  padding-top: 100px;
 }
 
+
+/*------------------------------404 Page--------------------------*/
+
+.four-container > div >img {width: 400px;margin-top: 35vh;margin-bottom: -20px;}
+
+.four-container {background-image:url(Images/Hero\ Image.webp);width: 100%; height: 100vh;}
+
+.four-container > div {margin: auto; width: 400px;}
+
+.four-container > div > a {border: solid 1.5px white;color: white;padding: 8px;margin-left: 130px;margin-top: -50px;transition: 0.2s ease;;}
+
+.four-container > div > a:hover {background-color: white; color: black;}
+
 .work-sect > img {margin-top: 50vh;}
+
+@media only screen and (max-width: 1166px) {
+
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="820" height="454" viewBox="0 0 820 454">
+  <defs>
+    <clipPath id="clip-error_404">
+      <rect width="820" height="454"/>
+    </clipPath>
+  </defs>
+  <g id="error_404" data-name="error 404" clip-path="url(#clip-error_404)">
+    <rect width="820" height="454" fill="rgba(255,255,255,0)"/>
+    <text id="Error" transform="translate(170 62)" fill="#fff" font-size="49" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="47">Error</tspan></text>
+    <text id="_404" data-name="404" transform="translate(129 62)" fill="#fff" font-size="312" font-family="Roboto-Regular, Roboto"><tspan x="0" y="296">404</tspan></text>
+    <text id="Page_Not_Found" data-name="Page Not Found" transform="translate(289 69)" fill="#fff" font-size="42" font-family="Roboto-Regular, Roboto"><tspan x="0" y="40">Page Not Found</tspan></text>
+  </g>
+</svg>

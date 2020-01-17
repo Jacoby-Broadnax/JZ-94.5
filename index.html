@@ -32,6 +32,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
     </script>
     <script type="text/javascript" src="redirection-mobile.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        SA.redirection_mobile({
+            mobile_url: "m.mscoastaljobs.com",
+        });
+
+        // ]]>
+    </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -134,7 +142,6 @@
         <div><a href="{{link}}" target="_blank">CONTACT</a></div>
         
     </div>
-
 
 {{/each}}
 
@@ -312,7 +319,7 @@
 
                         <br>
                         <select name="Subject" id="myList" required>
-                            <option value="">Subject</option>
+                            <option value="" disabled selected>Subject</option>
                             <option value="Marketing">Marketing</option>
                             <option value="Advertising">Advertising</option>
                             <option value="Events">Events</option>

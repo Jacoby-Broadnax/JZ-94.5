@@ -24,6 +24,7 @@ a {
   padding: 16px;
   font-size: 14px;
   border: none;
+  font-weight: normal;
 }
 
 .dropbtn:focus {
@@ -45,6 +46,9 @@ a {
   color: #E4E4E4;
   border-radius: 10px;
   margin-left: 0px;
+}
+.dropbtn > a {
+font-weight: normal;
 }
 
 .dropdown-content a {
@@ -96,7 +100,7 @@ margin-left: 110px;
 
 }
 
-.active-btn {font-weight: bold;;}
+.active-btn {font-weight: bold !important;}
 
 #audio:target {
   display: block;

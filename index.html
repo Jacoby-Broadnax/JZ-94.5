@@ -48,7 +48,7 @@
     </script>
 
     <script id="item-template" type="text/x-handlebars-template">
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="img-base">
             <div class="loading-indicator vivify fadeOut delay-3250">
                 <div><img src="Branding/loading.gif"></div>
             </div>
@@ -159,9 +159,9 @@
     <div class="content-feed">
        
         <div class="content-container">
-             <h1 data-aos="fade-up">News & Events</h1>
+             <h1>News & Events</h1>
 {{#each this}}
-<div data-aos="fade-up" class="content-item" >
+<div  class="content-item" >
     {{{imageUrl}}}
     <div class="slide-text-container exc">
         <h3>{{title}}</h3>
@@ -242,7 +242,7 @@
 
     <section class="hero-container">
 
-        <div id="items"></div>
+        <div data-aos="fade-up" id="items"></div>
 
       
         <div class="slide-container" style="display:block;">
@@ -288,7 +288,7 @@
 
     </section>
 
-    <div id="items7"></div>
+    <div id="items7" data-aos="fade-up"><div style="width: 100%; height:100vh;"></div></div>
 
 
     <div class="contact-sect" id="contact">
@@ -404,7 +404,7 @@
     <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-            if (scroll > 150) {
+            if (scroll > 500) {
                 $("#img-base").addClass("active");
             } else {
                 $("#img-base").removeClass("active");

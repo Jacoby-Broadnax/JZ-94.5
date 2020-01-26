@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>JZ 94.5 | The People's Station</title>
@@ -9,7 +10,18 @@
         About The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
     <meta name="keywords"
         content="Radio, JZ 94.5, The people station, R&B, Hip Hop, Blues, MS Gulf Coast, Mississippi Gulfcoast">
-    <meta name="robots" content="index, follow">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://jz945.com/">
+        <meta property="og:title" content="JZ 94.5 | The People's Station">
+        <meta property="og:description" content="
+                About The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+        <meta property="og:image" content="/Branding/jz.png">
+        <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://jz945test.netlify.com/">
+<meta property="twitter:title" content="JZ 94.5 | The People's Station">
+<meta property="twitter:description" content="
+        About The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
+<meta property="twitter:image" content="/Branding/jz.png">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -20,9 +32,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
     <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="Script.js"></script>
     <link rel="stylesheet" href="vivify.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -50,7 +59,7 @@
     <script id="item-template" type="text/x-handlebars-template">
         <div class="slideshow-container" id="img-base">
             <div class="loading-indicator vivify fadeOut delay-3250">
-                <div><img src="Branding/loading.gif"></div>
+                <div><img src="Branding/loading.gif" alt="Loading Animated GIF"></div>
             </div>
 
         {{#each this}}
@@ -65,7 +74,7 @@
                         <p>{{description}}</p>
                         
                         <div class="slide-button-container">
-                            <a href="{{buttonLink}}" target="_blank">Learn More</a>
+                            <a rel="noreferrer" href="{{buttonLink}}" target="_blank">Learn More</a>
                         </div>
                
                        
@@ -104,7 +113,7 @@
             {{{imageUrl}}}
             <h3>{{title}}</h3>
             <h4>{{description}}</h4>
-            <div><a href="{{link}}" target="_blank">CONTACT</a></div>
+            <div><a rel="noreferrer" href="{{link}}" target="_blank">CONTACT</a></div>
             
         </div>
   
@@ -134,7 +143,7 @@
         {{{imageUrl}}}
         <h3>{{title}}</h3>
         <h4>{{description}}</h4>
-        <div><a href="{{link}}" target="_blank">CONTACT</a></div>
+        <div><a rel="noreferrer" href="{{link}}" target="_blank">CONTACT</a></div>
         
     </div>
 {{/each}}
@@ -167,7 +176,7 @@
         <h3>{{title}}</h3>
         <p>{{description}}</p>           
         <div class="slide-button-container">
-            <a href="{{buttonLink}}" target="_blank">Learn More</a>
+            <a rel="noreferrer" href="{{buttonLink}}" target="_blank">Learn More</a>
         </div>   
     </div>
 </div>
@@ -187,11 +196,11 @@
 
 
         <div class="social-icons" id="social">
-            <a href="https://www.facebook.com/JZ94.5FM" target="_blank"><img src="Assets/facebook logo.svg"
+            <a rel="noreferrer" href="https://www.facebook.com/JZ94.5FM" target="_blank"><img src="Assets/facebook logo.svg"
                     alt="facebook" name="facebook"></a>
-            <a style="margin-top: -50px;" href="http://instagram.com/jz945" target="_blank"><img
+            <a rel="noreferrer" style="margin-top: -50px;" href="http://instagram.com/jz945" target="_blank"><img
                     src="Assets/Instagram Logo.svg" alt="instagram" name="instagram"></a>
-            <a style="margin-top: -50px;" href="https://twitter.com/jz945?lang=en" target="_blank"><img
+            <a rel="noreferrer" style="margin-top: -50px;" href="https://twitter.com/jz945?lang=en" target="_blank"><img
                     src="Assets/Twitter_Logo_WhiteOnImage.svg" alt="twitter" name="twitter"></a>
         </div>
 
@@ -201,7 +210,7 @@
             </div>
         </div>
         <a href="#navigation"><div class="menu-btn">
-                <i class="material-icons">menu</i>
+                <i class="material-icons" alt="Menu-Button">menu</i>
                         </div></a>
         
         <ul id="navigation">
@@ -319,7 +328,7 @@
                         9:00am to 5:00pm
                         closed on holidays</p>
                 </div>
-                <a href="https://goo.gl/maps/azfm6PMyfELqERn97" target="_blank">
+                <a rel="noreferrer" href="https://goo.gl/maps/azfm6PMyfELqERn97" target="_blank">
                     <div class="element">
                         <h5>Address</h5>
                         <p>10211 Southpark Dr.

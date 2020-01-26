@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>JZ 94.5 | The People's Station</title>
@@ -19,12 +20,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="Script.js"></script>
     <link rel="stylesheet" href="vivify.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -131,11 +126,15 @@
 
 
     </section>
+    <iframe style="position: fixed; left:0px; top:700px; z-index:800;" src="/listen.html"></iframe>
 <div >
     <section data-aos="fade-up" data-aos-duration="700" class="dj-sect" id="dj" >
         <h1>Listen Live</h1>
     </section>
-
+    <audio controls style="filter:invert();position:relative; z-index: 500;">
+        <source src="http://ccfcon11.primcast.com:9124/;" type="audio/mpeg">
+            Your Browser Does Not Support HTML Audio
+    </audio>
     <div  data-aos="fade-up" data-aos-duration="800" class="audio-sub" id="audio">
         <div class="audio-container vivify">
             <iframe src="https://tunein.com/embed/player/s30052/"  scrolling="no"
@@ -144,7 +143,10 @@
     </div>
     
 </div>
-
+<audio controls style="filter:invert();position:relative; z-index: 500;">
+    <source src="http://ccfcon11.primcast.com:9124/;" type="audio/mpeg">
+        Your Browser Does Not Support HTML Audio
+</audio>
     <footer >
         <div  class="footer-text-container vivify fadeIn delay-1500" style="float: left;margin-left: 50px;margin-top: -30;">
             <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a

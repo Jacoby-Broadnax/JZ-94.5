@@ -4,7 +4,7 @@
 <head>
     <title>JZ 94.5 | The People's Station</title>
     <link rel="stylesheet" href="main.css">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <meta name="description" content="
         About
         The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
@@ -13,17 +13,13 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
-    </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <link rel="shortcut icon" type="image/png" href="Assets/favicon 100px.png" />
     <link rel="stylesheet" href="vivify.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
-    </script>
+
     <script type="text/javascript" src="redirection-mobile.js"></script>
     <script type="text/javascript">
         // <![CDATA[
@@ -33,36 +29,7 @@
 
         // ]]>
     </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3', function (data) {
-                var template = Handlebars.compile($('#item-template2').html())
-                $('#items2').html(template(data.data3))
-            })
-        })
-    </script>
-
-    <script id="item-template2" type="text/x-handlebars-template">
-
-
-        <div class="people-container" data-aos="fade-up" data-aos-delay="200">
-     
-    {{#each this}}
-   
-        <div class="person">
-            {{{imageUrl}}}
-            <h3>{{title}}</h3>
-            <h4>{{description}}</h4>
-            <div><a href="mailto:{{link}}" target="_blank">CONTACT</a></div>
-            
-        </div>
-  
-    
-{{/each}}
-
-</div>
 
 </script>
 
@@ -70,7 +37,7 @@
 
 </head>
 
-<body style="background-image: url('Images/listenlive.png');height: 500px;">
+<body >
     <nav id="header">
         <div class="left-group"></div>
 
@@ -125,33 +92,55 @@
 
 
     </section>
-    <iframe style="position: fixed; left:0px; top:700px; z-index:800;" src="https://jz945test.netlify.com/listen.html"></iframe>
+
 <div >
     <section data-aos="fade-up" data-aos-duration="700" class="dj-sect" id="dj" >
-        <h1>Listen Live</h1>
-    </section>
-    <audio controls style="filter:invert();position:relative; z-index: 500;">
-        <source src="http://ccfcon11.primcast.com:9124/;" type="audio/mpeg">
-            Your Browser Does Not Support HTML Audio
-    </audio>
-    <div  data-aos="fade-up" data-aos-duration="800" class="audio-sub" id="audio">
-        <div class="audio-container vivify">
-            <iframe src="https://tunein.com/embed/player/s30052/"  scrolling="no"
-                frameborder="no"></iframe>
-        </div>
+        <h1 style="margin-bottom: 0px;">Listen Live</h1>
+        <div class="audio-container">
+            <script>
+            
+            </script>
+            <div class="sub-btn">
+                <button id="button">Play</button>
+              </div>
+            <audio id="player">
+                <source src='http://hi5.1980s.fm/;' type='audio/mpeg'/>
+              </audio>
+        <audio controls style="filter:invert();" autoplay>
+            <source src="http://ccfcon11.primcast.com:9124/;" type="audio/mpeg">
+                Your Browser Does Not Support HTML Audio
+        </audio>
     </div>
+    <script>
+    var button = document.getElementById("button");
+var audio = document.getElementById("player");
+
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    button.innerHTML = "Pause";
+  } else {
+    audio.pause();
+    button.innerHTML = "Play";
+  }
+});
+    </script>
+    </section>
     
 </div>
 
-    <footer >
+    <footer>
         <div  class="footer-text-container vivify fadeIn delay-1500" style="float: left;margin-left: 50px;margin-top: -30;">
             <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a
                     href="admin.html" target="_blank">Admin</a><span> ©2019
                     WJZD</span></p>
         </div>
     </footer>
-
-<audio src="http://ccfcon11.primcast.com:9124/;" autoplay></audio>
+    <div class="background-video">
+    <video autoplay loop>
+        <source src="/Assets/Pexels Videos 2112426.mp4" autoplay>
+    </video>
+</div>
     <script>
         AOS.init();
     </script>

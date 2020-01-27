@@ -107,13 +107,19 @@ margin-left: 110px;
   width: 170px;
 }
 
-.audio-container {margin-left: 50px;margin-top: 20px;}
+.sub-btn {float: left;}
+
+.audio-container {margin:auto; margin-top: 20px;margin-top: 60px;width: 250px;}
 
 .sub-btn > button {color: black;width: 70px; height: 70px;}
 
 .sub-btn > button > i {font-size: 35px;}
 
-.audio-text-container {float: left;width:190px;}
+.audio-text-container {float: left;width:190px;color: white;margin-left: 10px;}
+
+.audio-text-container > h1 {font-weight: bold;margin-bottom: 0px;margin-top: 7px;}
+
+.audio-text-container > p {font-size: 15px;margin-top: 10px;}
 
 
 

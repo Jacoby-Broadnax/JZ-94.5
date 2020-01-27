@@ -109,6 +109,14 @@ margin-left: 110px;
 
 .audio-container {margin-left: 50px;margin-top: 20px;}
 
+.sub-btn > button {color: black;width: 70px; height: 70px;}
+
+.sub-btn > button > i {font-size: 35px;}
+
+.audio-text-container {float: left;width:190px;}
+
+
+
 .active-btn {font-weight: bold !important;}
 
 #audio:target {

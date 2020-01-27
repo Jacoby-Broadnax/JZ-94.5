@@ -109,21 +109,25 @@ margin-left: 110px;
 
 .sub-btn {float: left;}
 
-.audio-container {margin:auto; margin-top: 20px;margin-top: 60px;width: 250px;}
+.audio-container {margin:auto; margin-top: 20px;margin-top: 60px;width: 290px;}
 
 .sub-btn > button {color: black;width: 70px; height: 70px;}
 
 .sub-btn > button > i {font-size: 35px;}
 
-.audio-text-container {float: left;width:190px;color: white;margin-left: 10px;}
+.audio-text-container {float: left;width:200px;color: white;margin-left: 10px;}
 
 .audio-text-container > h1 {font-weight: bold;margin-bottom: 0px;margin-top: 7px;}
 
 .audio-text-container > p {font-size: 15px;margin-top: 10px;}
 
-
+.home-audio-container {position: fixed;right: 0px;;z-index: 800;bottom: 10px;}
 
 .active-btn {font-weight: bold !important;}
+
+#button {background-color: white;border: none;border-radius: 0px;}
+
+#button:hover {cursor: pointer; background-color: lightgray;border: none;}
 
 #audio:target {
   display: block;

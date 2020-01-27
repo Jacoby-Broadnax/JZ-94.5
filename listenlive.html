@@ -150,43 +150,48 @@
 
 <div class="audio-text-container">
     <h1>Listen Live</h1>
-    <p>JZ 94.5 | The People Station</p>
+    <p>JZ 94.5 | The People's Station</p>
 </div>
 <br>
 <div id="items7"></div>
-    <script>
-    var button = document.getElementById("button");
-var audio = document.getElementById("player");
 
-button.addEventListener("click", function(){
-  if(audio.paused){
-    audio.play();
-    button.innerHTML = "<i class='material-icons'>pause</i>";
-  } else {
-    audio.pause();
-    button.innerHTML = "<i class='material-icons'>play_arrow</i>";
-  }
-});
-    </script>
     </section>
     
 </dziv>
 
     <footer>
-        <div  class="footer-text-container vivify fadeIn delay-1500" style="float: left;margin-left: 50px;margin-top: -30;">
+        <div  class="footer-text-container vivify fadeIn delay-1500" >
             <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a
                     href="admin.html" target="_blank">Admin</a><span> ©2019
                     WJZD</span></p>
         </div>
     </footer>
     <div class="background-video">
-    <video autoplay loop>
+    <video id="video" class="vivify fadeIn" autoplay loop muted>
         <source src="/Assets/Pexels Videos 2112426.mp4" autoplay>
     </video>
 </div>
     <script>
         AOS.init();
     </script>
+        <script>
+            var button = document.getElementById("button");
+        var audio = document.getElementById("player");
+        var video = document.getElementById("video");
+        button.addEventListener("click", function(){
+          if(audio.paused){
+            audio.play();
+            video.play();
+            button.innerHTML = "<i class='material-icons'>pause</i>";
+        
+          } else {
+            audio.pause();
+            video.pause();
+            button.innerHTML = "<i class='material-icons'>play_arrow</i>";
+         
+          }
+        });
+            </script>
     <script>
         var myIndex = 0;
         carousel();

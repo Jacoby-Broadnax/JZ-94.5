@@ -5,7 +5,7 @@
     <title>JZ 94.5 | The People's Station</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <meta name="description" content="
         About The #1 radio station on the MS Gulf Coast for the best mix of R&B, Hip Hop, Blues, and Oldies!">
     <meta name="keywords"
@@ -246,8 +246,25 @@
       
         <div class="slide-container" style="display:block;">
 
-
-
+<div class="home-audio-container">
+            <div class="audio-container">
+                <script>       
+                </script>
+                <div class="sub-btn">
+                    <button id="button"><i class='material-icons'>pause</i></button>
+                  </div>
+                <audio id="player" autoplay>
+                    <source src='http://ccfcon11.primcast.com:9124/;' type='audio/mpeg'/>
+                  </audio>
+         
+        </div>
+    
+    <div class="audio-text-container">
+        <h1>Listen Live</h1>
+        <p><marquee>JZ 94.5 | The People's Station | Check Us Out On Facebook, Twitter & Instagram | The Station With The Most Listeners</marquee></p>
+    </div>
+    <br>
+</div>
             <script>
                 window.setInterval(function () {
                     plusSlides(1, 0)
@@ -361,7 +378,24 @@
         </div>
 
     </div>
-
+    <script>
+        var button = document.getElementById("button");
+    var audio = document.getElementById("player");
+    var video = document.getElementById("video");
+    button.addEventListener("click", function(){
+      if(audio.paused){
+        audio.play();
+       
+        button.innerHTML = "<i class='material-icons'>pause</i>";
+    
+      } else {
+        audio.pause();
+        
+        button.innerHTML = "<i class='material-icons'>play_arrow</i>";
+     
+      }
+    });
+        </script>
     <footer>
         <div class="footer-text-container">
             <p><a href="privacypolicy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="admin.html"
@@ -371,7 +405,7 @@
     </footer>
 
 
-    
+ 
     <script>
         var myIndex = 0;
         carousel();

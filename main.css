@@ -197,7 +197,7 @@ right: 130px;;
 
 .menu-btn {display: none;position: fixed;right: 25px;background-color: ;padding: 8px;border-radius: 50px;border: solid 1.5px white; top: 20px;z-index:700}
 
-.menu-btn > i {color: white;}
+.menu-btn > a > i {color: white;}
 
 .social-icons>a>img {
   margin-left: 5px;

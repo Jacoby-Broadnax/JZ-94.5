@@ -1,0 +1,24 @@
+{
+    "short_name": "JZ 94.5",
+    "name": "JZ 94.5",
+    "icons": [
+        {
+            "src": "Branding/192px.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+    }
+        , {
+            "src": "Branding/512px.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+    }
+  ],
+    "start_url": "index.html",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "scope": "/live.html",
+    "theme_color": "#000000",	
+
+}

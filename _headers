@@ -1,0 +1,24 @@
+/index.html
+
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  
+/live.html
+
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block  
+  
+/dj.html
+
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  
+/salesteam.html
+
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  
+/contact.html
+
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block

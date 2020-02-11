@@ -216,7 +216,7 @@
 
         </div>
         <div class="fixed-logo-container">
-            <div class="logo-container"><a href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a>
+            <div class="logo-container" id="logo-space"><a href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a>
             </div>
         </div>
        <div class="menu-btn"> <a href="#navigation">
@@ -442,6 +442,16 @@
                 $("#img-base").addClass("active");
             } else {
                 $("#img-base").removeClass("active");
+            }
+        });
+    </script>
+     <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $("#logo-space").addClass("on");
+            } else {
+                $("#logo-space").removeClass("on");
             }
         });
     </script>

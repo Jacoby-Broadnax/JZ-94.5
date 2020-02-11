@@ -71,9 +71,19 @@
 
         </div>
         <div class="fixed-logo-container">
-            <div class="logo-container"><a href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a>
+            <div class="logo-container" id="logo-space"><a href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a>
             </div>
         </div>
+        <script>
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 0) {
+                    $("#logo-space").addClass("on");
+                } else {
+                    $("#logo-space").removeClass("on");
+                }
+            });
+        </script>
         <a href="#navigation"><div class="menu-btn">
                 <i class="material-icons">menu</i>
                         </div></a>
@@ -159,7 +169,7 @@
                         <label>Message Us</label>
                         <br>
                         <input name="First And Last Name
-                        " type="text" placeholder="First & Lastname" required>
+                        " type="text" placeholder="First & Last Name" required>
                         <input name="Email Address" type="email" placeholder="Email Address" required>
 
                         <textarea name="Message" placeholder="Message" required></textarea>

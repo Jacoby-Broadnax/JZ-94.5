@@ -105,9 +105,19 @@
 
         </div>
         <div class="fixed-logo-container">
-            <div class="logo-container"><a  href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a >
+            <div class="logo-container" id="logo-space"><a  href="#"><img src="Branding/Jz large white logo.png" alt="JZ 94.5 Logo"></a >
             </div>
         </div>
+        <script>
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 0) {
+                    $("#logo-space").addClass("on");
+                } else {
+                    $("#logo-space").removeClass("on");
+                }
+            });
+        </script>
         <ul id="navigation">
             <div class="navigation-spacer"></div>
             <li><a href="index.html" style="margin-right: 10px;">Home</a></li>

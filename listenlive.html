@@ -220,6 +220,16 @@
             setTimeout(carousel, 7000);
         }
     </script>
+        <script>
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 0) {
+                    $("#navigation").addClass("op");
+                } else {
+                    $("#navigation").removeClass("op");
+                }
+            });
+        </script>
     <script>
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
